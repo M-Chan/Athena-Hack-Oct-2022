@@ -22,7 +22,20 @@ html, body {
 
         display: grid;
         grid-template-columns: 33vw 34vw 33vw;
-        grid-template-rows: 17vh 8vh 25vh 15vh 22vh 13vh;
+        grid-template-rows: 17vh 8vh 23vh 15vh 20vh 13vh;
+    }
+
+    .hamburg{
+        position: relative;
+        left: 2vh;
+        top: 2vh;
+        width: 5vh;
+        height: 5vh;
+
+        background-image: url("./../assets/icon-hamburger.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        filter: invert(100%) sepia(100%) saturate(100%) hue-rotate(90deg) brightness(100%) contrast(100%);
     }
 
     .hiText{
@@ -102,7 +115,6 @@ html, body {
     .homeIcon{
         grid-column: 1;
         background-image: url("./../assets/homeIcon.png");
-        
     }
 
     .graphIcon{
@@ -113,12 +125,29 @@ html, body {
     .medalIcon{
         grid-column: 3;
         background-image: url("./../assets/medalIcon.png");
-
     }
 
     .acornIcon{
         grid-column: 4;
         background-image: url("./../assets/acorn.png");
-        
     }
+
+    .statsBox{
+        background-color: white;
+        width: 36vw;
+        height: 12vh;
+        border-radius: 2vh;
+        border: 1px solid black;
+        justify-self: center;
+        grid-row: 5;
+    }
+    .boxLeft{
+        grid-column: 1;
+        position: relative;
+        left: 7.5vw;
+    }
+    .boxRight{
+        grid-column: 3;
+        position: relative;
+        right: 7.5vw;}
 }
