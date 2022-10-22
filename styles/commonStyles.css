@@ -28,20 +28,6 @@ html, body {
         filter: invert(100%) sepia(100%) saturate(100%) hue-rotate(90deg) brightness(100%) contrast(100%);
     }
 
-    .bottomNav{
-        background-color: #A726F5;
-        grid-column: 1 / 4;
-        grid-row: 6;
-        width: 100vw;
-        height: 15vh;
-        border-radius: 3vh;
-        border: 1px solid black;
-
-        display: grid;
-        grid-template-columns: 25vw 25vw 25vw 25vw;
-        grid-template-rows: auto;
-    }
-
     .navIcon{
         height: 8vh;
         background-repeat: no-repeat;

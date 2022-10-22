@@ -72,21 +72,67 @@
     }
 
     .bottomNav{
-        background-color: #A726F5;
-        grid-column: 1 / 4;
+        background-color: #ffffff;
+        grid-column: 1 / 6;
         grid-row: 6;
         width: 100vw;
         height: 15vh;
         border-radius: 3vh;
-        border: 1px solid black;
 
         display: grid;
-        grid-template-columns: 25vw 25vw 25vw 25vw;
+        grid-template-columns: 18vw 18vw 28vw 18vw 18vw;
         grid-template-rows: auto;
     }
 
+    .navHome{
+        background-color: #ffffff;
+        width: 17.5vh;
+        height: 17.5vh;
+        border-radius: 50%;
+
+        grid-column: 1 / 6;
+        grid-row: 5 / 7;
+
+        justify-self: center;
+        position: relative;
+        top: 12.5vh;
+    }
+
+    .innerNavHome{
+        display: block;
+        position: absolute;
+        left: 6.25%;
+        top: 50%;
+        transform: translateX(-50%);
+        transform: translateY(-50%);
+        background-color: #DDBBFF;
+        width: 87.5%;
+        height: 87.5%;
+        border-radius: 50%;
+    }
+
+    #homeIcon{
+        background-color: #613EEA;
+
+        display: block;
+        position: absolute;
+        left: 7.5%;
+        top: 50%;
+        transform: translateX(-50%);
+        transform: translateY(-50%);
+
+        width: 85%;
+        height: 85%;
+        border-radius: 50%;
+
+        background-image: url("./../assets/homeIcon.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 55%;
+    }
+
     .navIcon{
-        height: 8vh;
+        height: 6vh;
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center;
@@ -94,24 +140,24 @@
         top: 0.8vh;
     }
 
-    .homeIcon{
+    .rewardsIcon{
         grid-column: 1;
-        background-image: url("./../assets/homeIcon.png");
+        background-image: url("./../assets/rewardsIcon.png");
     }
 
-    .graphIcon{
+    .leaderIcon{
         grid-column: 2;
-        background-image: url("./../assets/chartIcon.png");
+        background-image: url("./../assets/leaderIcon.png");
     }
 
-    .medalIcon{
-        grid-column: 3;
-        background-image: url("./../assets/medalIcon.png");
-    }
-
-    .acornIcon{
+    .investIcon{
         grid-column: 4;
-        background-image: url("./../assets/acorn.png");
+        background-image: url("./../assets/investIcon.png");
+    }
+
+    .accountIcon{
+        grid-column: 5;
+        background-image: url("./../assets/accountIcon.png");
     }
 
     .statsBox{
