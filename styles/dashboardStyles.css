@@ -140,14 +140,44 @@ html, body {
         border: 1px solid black;
         justify-self: center;
         grid-row: 5;
+
+        padding: 1.2vh;
+
+        font-size: 3.25vh;
     }
     .boxLeft{
         grid-column: 1;
         position: relative;
         left: 7.5vw;
+
+        display: grid;
+        grid-template-rows: 6vh 6vh;
     }
     .boxRight{
         grid-column: 3;
         position: relative;
-        right: 7.5vw;}
+        right: 7.5vw;
+    }
+
+    .subTop{
+        grid-row: 1;
+    }
+    .subBottom{
+        grid-row: 2;
+        display: grid;
+        grid-template-columns: 18vw 18vw;
+    }
+    
+    .subLeft{
+        grid-column: 1;
+    }
+    #acornStats{
+        height: 4.75vh;
+        background-image: url("./../assets/acorn.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .subRight{
+        grid-column: 2;
+    }
 }
