@@ -143,7 +143,7 @@ html, body {
 
         padding: 1.2vh;
 
-        font-size: 3.25vh;
+        font-size: 3vh;
     }
     .boxLeft{
         grid-column: 1;
@@ -172,7 +172,7 @@ html, body {
         grid-column: 1;
     }
     #acornStats{
-        height: 4.75vh;
+        height: 4.5vh;
         background-image: url("./../assets/acorn.png");
         background-size: contain;
         background-repeat: no-repeat;
