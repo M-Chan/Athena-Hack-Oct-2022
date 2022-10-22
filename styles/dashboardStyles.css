@@ -22,7 +22,7 @@ html, body {
 
         display: grid;
         grid-template-columns: 33vw 34vw 33vw;
-        grid-template-rows: 17vh 8vh 23vh 15vh 20vh 13vh;
+        grid-template-rows: 16vh 8vh 23vh 15.5vh 20vh 13vh;
     }
 
     .hamburg{
