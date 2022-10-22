@@ -1,0 +1,73 @@
+*{
+    overflow: hidden;
+}
+
+html, body {
+    margin: 0;
+    width: 100%; height: 100%;
+    overflow: hidden;
+    background-color: #DDBBFF;
+}
+
+/* the below hides other screens... */
+@media only screen and (min-width: 400px) {
+    *{
+        display: none;
+    }
+
+    .hamburg{
+        position: relative;
+        left: 2vh;
+        top: 2vh;
+        width: 5vh;
+        height: 5vh;
+
+        background-image: url("./../assets/icon-hamburger.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        filter: invert(100%) sepia(100%) saturate(100%) hue-rotate(90deg) brightness(100%) contrast(100%);
+    }
+
+    .bottomNav{
+        background-color: #A726F5;
+        grid-column: 1 / 4;
+        grid-row: 6;
+        width: 100vw;
+        height: 15vh;
+        border-radius: 3vh;
+        border: 1px solid black;
+
+        display: grid;
+        grid-template-columns: 25vw 25vw 25vw 25vw;
+        grid-template-rows: auto;
+    }
+
+    .navIcon{
+        height: 8vh;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        position: relative;
+        top: 0.8vh;
+    }
+
+    .homeIcon{
+        grid-column: 1;
+        background-image: url("./../assets/homeIcon.png");
+    }
+
+    .graphIcon{
+        grid-column: 2;
+        background-image: url("./../assets/chartIcon.png");
+    }
+
+    .medalIcon{
+        grid-column: 3;
+        background-image: url("./../assets/medalIcon.png");
+    }
+
+    .acornIcon{
+        grid-column: 4;
+        background-image: url("./../assets/acorn.png");
+    }
+}
