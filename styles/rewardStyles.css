@@ -4,7 +4,7 @@
     body {
         display: grid;
         grid-template-columns: 33vw 34vw 33vw;
-        grid-template-rows: 8vh 8vh 6vh 20vh 20.5vh 20vh 13vh; /* 82.5vh */
+        grid-template-rows: 8vh 8vh 16vh 20vh 10.5vh 20vh 13vh; /* 82.5vh */
     }
 
     .title{
@@ -124,5 +124,43 @@
 
     .accountText{grid-column: 5;}
     
+    .box1, .box2{
+        grid-column: 1 / 4;
+        background-color: white;
+        border-radius: 2vh;
+        justify-self: center;
+    }
 
+    .box1{
+        grid-row: 3;
+        width: 80vw;
+        height: 14vh;
+        display: flex;
+
+        align-items: center;
+
+        padding-left: 4vw;
+    }
+
+    .box2{
+        grid-row: 4;
+        width: 85vw;
+        height: 30vh;
+    }
+
+    .box1 .icon{
+        display: inline-block;
+        width: 8vh;
+        height: 8vh;
+        background-image: url("./../assets/coinsStack.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .box1 .value{
+        display: inline-block;
+        margin-left: 4vw;
+
+        font-size: 4.25vh;
+    }
 }
