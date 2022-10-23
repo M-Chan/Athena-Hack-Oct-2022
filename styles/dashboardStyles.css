@@ -20,13 +20,27 @@
         filter: invert(100%) sepia(100%) saturate(100%) hue-rotate(90deg) brightness(100%) contrast(100%);
     }
 
-    .appName{
+    /* .appName{
         grid-column: 1 / 2;
         grid-row: 1;
         justify-self: center;
         font-size: 5vh;
         font-weight: 500;
         align-self: flex-start;
+    } */
+    .appName{
+        grid-column: 1 / 2;
+        grid-row: 1;
+        justify-self: center;
+        align-self: center;
+
+        background-image: url("./../assets/acornLogo.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+
+        width: 28vw;
+        height: 12.5vh;
     }
 
     .hiText{
