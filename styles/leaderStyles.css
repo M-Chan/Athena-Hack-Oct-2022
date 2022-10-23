@@ -179,7 +179,7 @@
         justify-content: center;
         align-items: center;
 
-        font-size: 1.8vh;
+        font-size: 2vh;
     }
     .amount{
         grid-row: 4;
@@ -212,6 +212,52 @@
         background-color: #F4F6F9;
         height: 8.5vh;
         width: 80vw;
-        border-radius: 5vh
+        border-radius: 5vh;
+
+        display: grid;
+        grid-template-columns: 13vw 13vw 41vw 13vw; /* adds to 80vw */
+        align-items: center;
+        justify-content: center;
+
+        padding-left: 2vw;
+        padding-right: 2vw;
+    }
+
+    .rank{
+        grid-column: 1;
+        text-align: center;
+        color: #211791;
+        font-weight: 600;
+    }
+
+    #rank2, #rank3, #rank4{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    width: 6vh;
+    height: 6vh;
+    border-radius: 50%;
+    }
+
+    #rank2{background-image: url("./../assets/rank2Profile.png");}
+    #rank3{background-image: url("./../assets/rank3Profile.png");}
+    #rank4{background-image: url("./../assets/rank4Profile.png");}
+
+    .userProfilePic{
+        grid-column: 2;
+        display: flex;
+        justify-content: center;
+    }
+    .userName{
+        grid-column: 3;
+        text-align: left;
+        padding-left: 2vw;
+    }
+    .score{
+        grid-column: 4;
+        text-align: center;
+        color: #211791;
+        font-weight: 600;
     }
 }
