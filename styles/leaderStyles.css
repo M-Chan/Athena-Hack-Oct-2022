@@ -4,7 +4,7 @@
     body {
         display: grid;
         grid-template-columns: 33vw 34vw 33vw;
-        grid-template-rows: 8vh 8vh 6vh 20vh 20.5vh 20vh 13vh; /* 82.5vh */
+        grid-template-rows: 6vh 26.9vh 27.6vh 1vh 1vh 20vh 13vh; /* 82.5vh */
     }
 
     .title{
@@ -124,4 +124,94 @@
 
     .accountText{grid-column: 5;}
     
+    .topUserPart{
+        grid-column: span;
+        grid-row: 2;
+        width: 100vw;
+
+        display: flex;
+        justify-content: center;
+    }
+
+    .topUserBox{
+        height: 32vh;
+        width: 45.5vw;
+
+        display: grid;
+        grid-template-rows: auto auto auto auto;
+        justify-content: center;
+
+        /* background-color: #bbeeff; */
+    }
+
+    .mostText{
+        grid-row: 1;
+        text-align: center;
+        /* background-color: #3eea6c; */
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+
+        color: #5F41B2;
+        font-size: 3.05vh;
+    }
+    .avatarHolder{
+        grid-row: 2;
+        /* background-color: #ea3eb9; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #avatarImage{
+        background-image: url("./../assets/leadingAvatar.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+
+        width: 40vw;
+        height: 13vh;
+    }
+    .name{
+        grid-row: 3;
+        text-align: center;
+        /* background-color: #3ec8ea; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        font-size: 1.8vh;
+    }
+    .amount{
+        grid-row: 4;
+        text-align: center;
+        /* background-color: #ead93e; */
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+
+        
+        color: #5F41B2;
+        font-size: 2.2vh;
+        font-weight: 600;
+    }
+
+    .leaderboardBox{
+        grid-column: span;
+        grid-row: 3;
+        width: 100vw;
+        height: 32vh;
+
+        margin-top: 2.5vh;
+        display: grid;
+        grid-row: 9.4vh 9.4vh 9.4vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .boardPosition{
+        background-color: #F4F6F9;
+        height: 8.5vh;
+        width: 80vw;
+        border-radius: 5vh
+    }
 }
