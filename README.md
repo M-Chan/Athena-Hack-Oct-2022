@@ -8,4 +8,5 @@ We chose BlackRock's 'Improving Financial Inclusion' theme and created an app wh
 
 A demo of the app can be seen in the video below
 
-https://user-images.githubusercontent.com/81781462/197385852-a89f62c1-c4df-455e-9296-6911cf0392f1.mp4
+https://user-images.githubusercontent.com/81781462/197386694-ecfd95ce-26ac-42e4-b330-1fd37f20ce98.mp4
+
