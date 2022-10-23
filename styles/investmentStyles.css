@@ -195,10 +195,48 @@
     }
 
     .assetsPart{
-        background-color: rgb(28, 177, 28);
         grid-column: 1 / 4;
         grid-row: 3 / 6;
         height: 25vh;
+
+        display: grid;
+        grid-template-rows: 3vh 9.5vh 9.5vh 3vh;
     }
     
+    .assetsText{
+        font-size: 2.75vh;
+        font-weight: 700;
+        grid-row: 1;
+
+        position: relative;
+        left: 5vw;
+    }
+
+    .asset1, .asset2{
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+
+        justify-self: center;
+
+        width: 90vw;
+        height: 8vh;
+    }
+
+    .asset1{
+        grid-row: 2;
+        background-image: url("./../assets/asset1.png");
+    }
+    .asset2{
+        grid-row: 3;
+        background-image: url("./../assets/asset2.png");
+    }
+    .more{
+        grid-row: 4;
+        justify-content: center;
+        text-align: center;
+        color: #325D79;
+        font-size: 2.2vh;
+        font-weight: 600;
+    }
 }
