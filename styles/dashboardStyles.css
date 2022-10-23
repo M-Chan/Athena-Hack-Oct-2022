@@ -26,7 +26,7 @@
         justify-self: center;
         font-size: 5vh;
         font-weight: 500;
-        align-self: center;
+        align-self: flex-start;
     }
 
     .hiText{
