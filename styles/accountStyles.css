@@ -8,7 +8,23 @@
     }
 
     .title{
-        display: grid;
+        width: 100vw;
+        display: inline;
+        padding: 2vh;
+    }
+    .pageIcon{
+        display: inline-block;
+        width: 4vh;
+        height: 4vh;
+        background-image: url("./../assets/accountIcon.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .pageTitle{
+        display: inline-block;
+        margin-left: 2vw;
+        text-transform: uppercase;
+        font-size: 3.05vh;
     }
 
     .bottomNav{

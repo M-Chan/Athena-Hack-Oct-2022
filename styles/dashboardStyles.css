@@ -74,6 +74,8 @@
         display: grid;
         grid-template-columns: 18vw 18vw 28vw 18vw 18vw;
         grid-template-rows: auto;
+
+        padding-top: 0.75vh;
     }
 
     .navHome{
