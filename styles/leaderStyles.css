@@ -4,7 +4,7 @@
     body {
         display: grid;
         grid-template-columns: 33vw 34vw 33vw;
-        grid-template-rows: 8vh 42vh 11vh 1vh 0.5vh 20vh 13vh; /* 82.5vh */
+        grid-template-rows: 6vh 26.9vh 27.6vh 1vh 1vh 20vh 13vh; /* 82.5vh */
     }
 
     .title{
@@ -16,7 +16,7 @@
         display: inline-block;
         width: 4vh;
         height: 4vh;
-        background-image: url("./../assets/investIconMain.png");
+        background-image: url("./../assets/leaderIconMain.png");
         background-repeat: no-repeat;
         background-size: contain;
     }
@@ -105,14 +105,14 @@
 
     .leaderIcon{
         grid-column: 2;
-        background-image: url("./../assets/leaderIcon.png");
+        background-image: url("./../assets/leaderIconMain.png");
     }
 
     .leaderText{grid-column: 2;}
 
     .investIcon{
         grid-column: 4;
-        background-image: url("./../assets/investIconMain.png");
+        background-image: url("./../assets/investIcon.png");
     }
 
     .investText{grid-column: 4;}
@@ -123,120 +123,141 @@
     }
 
     .accountText{grid-column: 5;}
-
-    .mainPart{
-        /* background-color: rgb(37, 110, 173); */
-        grid-column: 1 / 4;
-        grid-row: 2;
-        height: 100%;
-
-        display: grid;
-        grid-template-rows: 9.5vh 25vh 9.5vh; /* adds to 42vh */
-    }
-
-    .stats{
-        grid-row: 1;
-        /* background-color: rgb(67, 134, 182);
-        display: flex;
-
-        margin-bottom: 2.5vh; */
-
-        background-image: url("./../assets/investmentStats.png");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: contain;
-
-        width: 47.5vw;
-        position: relative;
-        left: 15vw;
-    }
-
-    .graph{
-        grid-row: 2;
-
-        background-image: url("./../assets/investmentMainChart.png");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: contain;
-    }
-
-    .buttons{
-        grid-row: 3;
-        display: grid;
-        grid-template-columns: auto auto;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .btn{
-        background-color: #ffffff;
-        border: 1px solid black;
-        border-radius: 2vh;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        height: 5vh;
-        width: 22.5vw;
-
-        margin-left: 3vw;
-        margin-right: 3vw;
-
-        font-size: 2.5vh;
-        color: #3E45FF;
-    }
-
-    .tradeButton{
-        grid-column: 1;
-    }
-    .hintsButton{
-        grid-column: 2;
-    }
-
-    .assetsPart{
-        grid-column: 1 / 4;
-        grid-row: 3 / 6;
-        height: 25vh;
-
-        display: grid;
-        grid-template-rows: 3vh 9.5vh 9.5vh 3vh;
-    }
     
-    .assetsText{
-        font-size: 2.75vh;
-        font-weight: 700;
-        grid-row: 1;
+    .topUserPart{
+        grid-column: span;
+        grid-row: 2;
+        width: 100vw;
 
-        position: relative;
-        left: 5vw;
+        display: flex;
+        justify-content: center;
     }
 
-    .asset1, .asset2{
+    .topUserBox{
+        height: 32vh;
+        width: 45.5vw;
+
+        display: grid;
+        grid-template-rows: auto auto auto auto;
+        justify-content: center;
+
+        /* background-color: #bbeeff; */
+    }
+
+    .mostText{
+        grid-row: 1;
+        text-align: center;
+        /* background-color: #3eea6c; */
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+
+        color: #5F41B2;
+        font-size: 3.05vh;
+    }
+    .avatarHolder{
+        grid-row: 2;
+        /* background-color: #ea3eb9; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #avatarImage{
+        background-image: url("./../assets/leadingAvatar.png");
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center;
 
-        justify-self: center;
-
-        width: 90vw;
-        height: 8vh;
+        width: 40vw;
+        height: 13vh;
     }
-
-    .asset1{
-        grid-row: 2;
-        background-image: url("./../assets/asset1.png");
-    }
-    .asset2{
+    .name{
         grid-row: 3;
-        background-image: url("./../assets/asset2.png");
-    }
-    .more{
-        grid-row: 4;
-        justify-content: center;
         text-align: center;
-        color: #325D79;
+        /* background-color: #3ec8ea; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        font-size: 2vh;
+    }
+    .amount{
+        grid-row: 4;
+        text-align: center;
+        /* background-color: #ead93e; */
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+
+        
+        color: #5F41B2;
         font-size: 2.2vh;
+        font-weight: 600;
+    }
+
+    .leaderboardBox{
+        grid-column: span;
+        grid-row: 3;
+        width: 100vw;
+        height: 32vh;
+
+        margin-top: 2.5vh;
+        display: grid;
+        grid-row: 9.4vh 9.4vh 9.4vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .boardPosition{
+        background-color: #F4F6F9;
+        height: 8.5vh;
+        width: 80vw;
+        border-radius: 5vh;
+
+        display: grid;
+        grid-template-columns: 13vw 13vw 41vw 13vw; /* adds to 80vw */
+        align-items: center;
+        justify-content: center;
+
+        padding-left: 2vw;
+        padding-right: 2vw;
+    }
+
+    .rank{
+        grid-column: 1;
+        text-align: center;
+        color: #211791;
+        font-weight: 600;
+    }
+
+    #rank2, #rank3, #rank4{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    width: 6vh;
+    height: 6vh;
+    border-radius: 50%;
+    }
+
+    #rank2{background-image: url("./../assets/rank2Profile.png");}
+    #rank3{background-image: url("./../assets/rank3Profile.png");}
+    #rank4{background-image: url("./../assets/rank4Profile.png");}
+
+    .userProfilePic{
+        grid-column: 2;
+        display: flex;
+        justify-content: center;
+    }
+    .userName{
+        grid-column: 3;
+        text-align: left;
+        padding-left: 2vw;
+    }
+    .score{
+        grid-column: 4;
+        text-align: center;
+        color: #211791;
         font-weight: 600;
     }
 }

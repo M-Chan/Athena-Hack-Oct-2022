@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   
   <link rel="stylesheet" href="./../styles/commonStyles.css" />
-  <link rel="stylesheet" href="./../styles/investmentStyles.css" />
+  <link rel="stylesheet" href="./../styles/leaderStyles.css" />
 
   <title>App</title>
 
@@ -13,25 +13,35 @@
 <body scroll="no" style="overflow: hidden">
     <div class="title">
         <div class="pageIcon"></div>
-        <div class="pageTitle">My Investments</div>
+        <div class="pageTitle">leaderboard</div>
     </div>
 
-    <div class="mainPart">
-        <div class="stats"></div>
-        <div class="graph"></div>
-        <div class="buttons">
-            <div class="btn tradeButton">Buy / Sell</div>
-            <div class="btn hintsButton">Hints</div>
+    <div class="topUserPart"><div class="topUserBox">
+        <div class="mostText">Most Acorns</div>
+        <div class="avatarHolder"><div id="avatarImage"></div></div>
+        <div class="name">Adam</div>
+        <div class="amount">50,000</div>
+    </div></div>
+    <div class="leaderboardBox">
+        <div class="boardPosition">
+            <div class="rank">2nd</div>
+            <div class="userProfilePic"><div id="rank2"></div></div>
+            <div class="userName">Nimi Martins</div>
+            <div class="score">2300</div>
+        </div>
+        <div class="boardPosition">
+            <div class="rank">3rd</div>
+            <div class="userProfilePic"><div id="rank3"></div></div>
+            <div class="userName">Yomi Ndu</div>
+            <div class="score">2300</div>
+        </div>
+        <div class="boardPosition">
+            <div class="rank">4th</div>
+            <div class="userProfilePic"><div id="rank4"></div></div>
+            <div class="userName">Akin Siyanbola</div>
+            <div class="score">2300</div>
         </div>
     </div>
-
-    <div class="assetsPart">
-        <div class="assetsText">Assets</div>
-        <div class="asset1"></div>
-        <div class="asset2"></div>
-        <div class="more">Load more</div>
-    </div>
-
 
     <div class="navHome">
         <a href="./dashboard.html" target="_self">

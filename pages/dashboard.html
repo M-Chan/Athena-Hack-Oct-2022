@@ -5,33 +5,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   
   <link rel="stylesheet" href="./../styles/commonStyles.css" />
-  <link rel="stylesheet" href="./../styles/investmentStyles.css" />
+  <link rel="stylesheet" href="./../styles/dashboardStyles.css" />
 
   <title>App</title>
 
 </head>
 <body scroll="no" style="overflow: hidden">
-    <div class="title">
-        <div class="pageIcon"></div>
-        <div class="pageTitle">My Investments</div>
-    </div>
+    <div class="appName"></div>
+    <div class="hiText">Hi Adam!</div>
 
-    <div class="mainPart">
-        <div class="stats"></div>
-        <div class="graph"></div>
-        <div class="buttons">
-            <div class="btn tradeButton">Buy / Sell</div>
-            <div class="btn hintsButton">Hints</div>
+    <div class="avatarBox"><div id="avatar"></div></div>
+
+    <div class="mainStatsBox">
+        <div class="investmentsBox">
+            <div class="investmentLeftSide">
+                <div class="investmentTitle">My Investments</div>
+                <div class="investmentStats"><p style="display: inline-block; color: #949494">This week &nbsp;</p><p style="display: inline-block; color: #02C94F; font-weight: 600;">36% ^</p></div>
+                <div class="investmentValue">£643.84</div>
+            </div>
+            <div class="investmentsMiniChartBox"><div id="investmentsMiniChart"></div></div>
+        </div>
+        <div class="balanceBox">
+            <div class="littleBoxTitle">Balance</div>
+            <div class="bottomBalancePart">
+                <div id="coinsImg"></div>
+                <div id="coinValue">355</div>
+            </div>
+        </div>
+        <div class="rankingBox">
+            <div class="littleBoxTitle">Ranking</div>
         </div>
     </div>
-
-    <div class="assetsPart">
-        <div class="assetsText">Assets</div>
-        <div class="asset1"></div>
-        <div class="asset2"></div>
-        <div class="more">Load more</div>
-    </div>
-
 
     <div class="navHome">
         <a href="./dashboard.html" target="_self">

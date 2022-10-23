@@ -4,19 +4,19 @@
     body {
         display: grid;
         grid-template-columns: 33vw 34vw 33vw;
-        grid-template-rows: 8vh 42vh 11vh 1vh 0.5vh 20vh 13vh; /* 82.5vh */
+        grid-template-rows: 8vh 20vh 26.5vh 5vh 3vh 20vh 13vh; /* 82.5vh */
     }
 
     .title{
         width: 100vw;
-        display: inline;
+        display: flex;
         padding: 2vh;
     }
     .pageIcon{
         display: inline-block;
         width: 4vh;
         height: 4vh;
-        background-image: url("./../assets/investIconMain.png");
+        background-image: url("./../assets/accountIconMain.png");
         background-repeat: no-repeat;
         background-size: contain;
     }
@@ -28,6 +28,7 @@
     }
 
     .bottomNav{
+        /* background-color: #ffffff; */
         background-color: rgba(233, 233, 233, 0.347);
         grid-column: 1 / 6;
         grid-row: 7;
@@ -112,131 +113,73 @@
 
     .investIcon{
         grid-column: 4;
-        background-image: url("./../assets/investIconMain.png");
+        background-image: url("./../assets/investIcon.png");
     }
 
     .investText{grid-column: 4;}
 
     .accountIcon{
         grid-column: 5;
-        background-image: url("./../assets/accountIcon.png");
+        background-image: url("./../assets/accountIconMain.png");
     }
 
     .accountText{grid-column: 5;}
-
-    .mainPart{
-        /* background-color: rgb(37, 110, 173); */
-        grid-column: 1 / 4;
-        grid-row: 2;
-        height: 100%;
-
-        display: grid;
-        grid-template-rows: 9.5vh 25vh 9.5vh; /* adds to 42vh */
-    }
-
-    .stats{
-        grid-row: 1;
-        /* background-color: rgb(67, 134, 182);
-        display: flex;
-
-        margin-bottom: 2.5vh; */
-
-        background-image: url("./../assets/investmentStats.png");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: contain;
-
-        width: 47.5vw;
-        position: relative;
-        left: 15vw;
-    }
-
-    .graph{
-        grid-row: 2;
-
-        background-image: url("./../assets/investmentMainChart.png");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: contain;
-    }
-
-    .buttons{
-        grid-row: 3;
-        display: grid;
-        grid-template-columns: auto auto;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .btn{
-        background-color: #ffffff;
-        border: 1px solid black;
-        border-radius: 2vh;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        height: 5vh;
-        width: 22.5vw;
-
-        margin-left: 3vw;
-        margin-right: 3vw;
-
-        font-size: 2.5vh;
-        color: #3E45FF;
-    }
-
-    .tradeButton{
-        grid-column: 1;
-    }
-    .hintsButton{
-        grid-column: 2;
-    }
-
-    .assetsPart{
-        grid-column: 1 / 4;
-        grid-row: 3 / 6;
-        height: 25vh;
-
-        display: grid;
-        grid-template-rows: 3vh 9.5vh 9.5vh 3vh;
-    }
     
-    .assetsText{
-        font-size: 2.75vh;
-        font-weight: 700;
-        grid-row: 1;
-
-        position: relative;
-        left: 5vw;
+    .notifIcon{
+        background-image: url("./../assets/notifIcon.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        width: 4vh;
+        height: 4vh;
     }
 
-    .asset1, .asset2{
+    .leftHeaderPart{
+        display: block;
+        position: absolute;
+        right: 0vw;
+        width: 18.5vw;
+        height: 4vh;
+    }
+    .histIcon{
+        display: inline-block;
+        background-image: url("./../assets/historyIcon.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        width: 4vh;
+        height: 4vh;
+    }
+    .menuIcon{
+        display: inline-block;
+        background-image: url("./../assets/menuIcon.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        width: 4vh;
+        height: 4vh;
+    }
+
+    .accountOverview, .accountSettings{
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center;
 
-        justify-self: center;
-
-        width: 90vw;
-        height: 8vh;
+        grid-column: 1 / 4;
     }
 
-    .asset1{
+    .accountOverview{
+        background-image: url("./../assets/accountAvatar.png");
         grid-row: 2;
-        background-image: url("./../assets/asset1.png");
     }
-    .asset2{
-        grid-row: 3;
-        background-image: url("./../assets/asset2.png");
-    }
-    .more{
-        grid-row: 4;
-        justify-content: center;
-        text-align: center;
-        color: #325D79;
-        font-size: 2.2vh;
-        font-weight: 600;
+
+    .accountSettings{
+        background-image: url("./../assets/accountInfo.png");
+        grid-row: 3 / 6;
+        grid-column: 1 / 4;
+        width: 90vw;
+        height: 45vh;
+        margin-top: 2vh;
+        justify-self: center;
     }
 }

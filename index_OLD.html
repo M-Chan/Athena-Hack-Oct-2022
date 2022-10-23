@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  
+  <link rel="stylesheet" href="./styles/commonStyles.css" />
+  <link rel="stylesheet" href="./styles/dashboardStyles.css" />
+
+  <title>App</title>
+
+</head>
+<body scroll="no" style="overflow: hidden">
+    <div class="hamburg"></div>
+    <div class="appName">Acorn</div>
+    <div class="hiText">Hi Jamie!</div>
+
+    <div class="avatarBox"><div id="avatar"></div></div>
+
+    <div class="mainStatsBox">
+        <div class="investmentsBox">
+            <div class="investmentLeftSide">
+                <div class="investmentTitle">My Investments</div>
+                <div class="investmentStats"><p style="display: inline-block; color: #CFD5E2;">This week &nbsp;</p><p style="display: inline-block; color: #02C94F; font-weight: 600;">36% ^</p></div>
+                <div class="investmentValue">£643.84</div>
+            </div>
+            <div class="investmentsMiniChartBox"><div id="investmentsMiniChart"></div></div>
+        </div>
+        <div class="balanceBox">
+            <div class="littleBoxTitle">Balance</div>
+            <div class="bottomBalancePart">
+                <div id="coinsImg"></div>
+                <div id="coinValue">355</div>
+            </div>
+        </div>
+        <div class="rankingBox">
+            <div class="littleBoxTitle">Ranking</div>
+        </div>
+    </div>
+
+    <div class="navHome">
+        <a href="./index.html" target="_self">
+            <div class="innerNavHome">
+                <div id="homeIcon"></div>
+            </div>
+        </a>
+    </div>
+
+    <div class="bottomNav">
+        <a href="./pages/rewards.html" target="_self"><div class="navIcon rewardsIcon"></div></a>
+        <!-- <div class="navText rewardsText">Rewards</div> -->
+        <a href="./pages/leaderboard.html" target="_self"><div class="navIcon leaderIcon"></div></a>
+        <a href="" target="_self"><div></div></a>
+        <!-- <div class="navText leaderText">Leaderboard</div> -->
+        <a href="./pages/investment.html" target="_self"><div class="navIcon investIcon"></div></a>
+        <!-- <div class="navText investText">Investments</div> -->
+        <a href="./pages/account.html" target="_self"><div class="navIcon accountIcon"></div></a>
+        <!-- <div class="navText accountText">Account</div> -->
+    </div>
+  
+</body>
+</html>
