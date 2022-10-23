@@ -9,7 +9,7 @@
 
     .title{
         width: 100vw;
-        display: inline;
+        display: flex;
         padding: 2vh;
     }
     .pageIcon{
@@ -124,4 +124,38 @@
 
     .accountText{grid-column: 5;}
     
+    .notifIcon{
+        background-image: url("./../assets/notifIcon.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        width: 4vh;
+        height: 4vh;
+    }
+
+    .leftHeaderPart{
+        display: block;
+        position: absolute;
+        right: 0vw;
+        width: 16vw;
+        height: 4vh;
+    }
+    .histIcon{
+        display: inline-block;
+        background-image: url("./../assets/historyIcon.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        width: 4vh;
+        height: 4vh;
+    }
+    .menuIcon{
+        display: inline-block;
+        background-image: url("./../assets/menuIcon.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        width: 4vh;
+        height: 4vh;
+    }
 }
