@@ -4,7 +4,7 @@
     body {
         display: grid;
         grid-template-columns: 33vw 34vw 33vw;
-        grid-template-rows: 8vh 8vh 6vh 20vh 20.5vh 20vh 13vh; /* 82.5vh */
+        grid-template-rows: 8vh 20vh 26.5vh 5vh 3vh 20vh 13vh; /* 82.5vh */
     }
 
     .title{
@@ -158,5 +158,28 @@
         background-position: center;
         width: 4vh;
         height: 4vh;
+    }
+
+    .accountOverview, .accountSettings{
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+
+        grid-column: 1 / 4;
+    }
+
+    .accountOverview{
+        background-image: url("./../assets/accountAvatar.png");
+        grid-row: 2;
+    }
+
+    .accountSettings{
+        background-image: url("./../assets/accountInfo.png");
+        grid-row: 3 / 6;
+        grid-column: 1 / 4;
+        width: 90vw;
+        height: 45vh;
+        margin-top: 2vh;
+        justify-self: center;
     }
 }
