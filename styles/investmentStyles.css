@@ -4,7 +4,7 @@
     body {
         display: grid;
         grid-template-columns: 33vw 34vw 33vw;
-        grid-template-rows: 8vh 8vh 6vh 20vh 20.5vh 20vh 13vh; /* 82.5vh */
+        grid-template-rows: 8vh 42vh 11vh 1vh 0.5vh 20vh 13vh; /* 82.5vh */
     }
 
     .title{
@@ -28,7 +28,7 @@
     }
 
     .bottomNav{
-        background-color: #ffffff;
+        background-color: rgba(233, 233, 233, 0.347);
         grid-column: 1 / 6;
         grid-row: 7;
         width: 100vw;
@@ -41,7 +41,7 @@
     }
 
     .navHome{
-        background-color: #ffffff;
+        background-color: rgba(233, 233, 233, 0.347);
         width: 17.5vh;
         height: 17.5vh;
         border-radius: 50%;
@@ -123,5 +123,79 @@
     }
 
     .accountText{grid-column: 5;}
+
+    .mainPart{
+        /* background-color: rgb(37, 110, 173); */
+        grid-column: 1 / 4;
+        grid-row: 2;
+        height: 100%;
+
+        display: grid;
+        grid-template-rows: 9.5vh 25vh 9.5vh; /* adds to 42vh */
+    }
+
+    .stats{
+        grid-row: 1;
+        /* background-color: rgb(67, 134, 182);
+        display: flex;
+
+        margin-bottom: 2.5vh; */
+
+        background-image: url("./../assets/investmentStats.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+
+        width: 47.5vw;
+        position: relative;
+        left: 15vw;
+    }
+
+    .graph{
+        grid-row: 2;
+
+        background-image: url("./../assets/investmentMainChart.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+
+    .buttons{
+        grid-row: 3;
+        display: grid;
+        grid-template-columns: auto auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .btn{
+        background-color: #ffffff;
+        border: 1px solid black;
+        border-radius: 2vh;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        height: 5vh;
+        width: 22.5vw;
+
+        margin-left: 3vw;
+        margin-right: 3vw;
+    }
+
+    .tradeButton{
+        grid-column: 1;
+    }
+    .hintsButton{
+        grid-column: 2;
+    }
+
+    .assetsPart{
+        background-color: rgb(28, 177, 28);
+        grid-column: 1 / 4;
+        grid-row: 3 / 6;
+        height: 25vh;
+    }
     
 }
