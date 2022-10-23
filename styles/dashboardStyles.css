@@ -303,6 +303,12 @@
         font-weight: 700;
     }
 
+    .actualRank{
+        text-align: center;
+        font-size: 4vh;
+        font-weight: 600;
+    }
+
     .bottomBalancePart{
         grid-row: 2;
 
@@ -311,18 +317,21 @@
     }
 
     #coinsImg{
-        background-image: url("./../assets/coinsStack.png");
+        background-image: url("./../assets/loneAcorn.png");
         background-repeat: no-repeat;
         background-size: contain;
+        background-position: center;
 
         width: 15vw;
-        height: 6vh;
+        height: 6.5vh;
 
+        align-self: center;
         justify-self: center;
     }
 
     #coinValue{
         font-weight: 700;
         font-size: 4vh;
+        align-self: center;
     }
 }
