@@ -1,0 +1,28 @@
+[
+    {
+        "id" : 1,
+        "name" : "Amy",
+        "balance" : 1000
+    },
+    {
+        "id" : 2,
+        "name" : "Ting Ting",
+        "balance" : 300
+    },
+    {
+        "id" : 3,
+        "name" : "Elle",
+        "balance" : 400
+    },
+    {
+        "id" : 4,
+        "name" : "Michelle",
+        "balance" : 500
+    },
+    {
+        "id" : 5,
+        "name" : "Ariana",
+        "balance" : 600
+    }
+
+]
