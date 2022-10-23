@@ -3,37 +3,92 @@
 @media only screen and (max-width: 400px) {
     body {
         display: grid;
-        grid-template-rows: 12vh 18vh 25.5vh 7vh 20vh 13vh;
+        grid-template-columns: 33vw 34vw 33vw;
+        grid-template-rows: 8vh 8vh 6vh 20vh 20.5vh 20vh 13vh; /* 82.5vh */
     }
 
-    .hamburg{
-        position: relative;
-        left: 2vh;
-        top: 2vh;
-        width: 5vh;
-        height: 5vh;
-
-        background-image: url("./../assets/icon-hamburger.svg");
+    .title{
+        width: 100vw;
+        display: inline;
+        padding: 2vh;
+    }
+    .pageIcon{
+        display: inline-block;
+        width: 4vh;
+        height: 4vh;
+        background-image: url("./../assets/investIconMain.png");
         background-repeat: no-repeat;
         background-size: contain;
-        filter: invert(100%) sepia(100%) saturate(100%) hue-rotate(90deg) brightness(100%) contrast(100%);
+    }
+    .pageTitle{
+        display: inline-block;
+        margin-left: 2vw;
+        text-transform: uppercase;
+        font-size: 3.05vh;
     }
 
     .bottomNav{
-        background-color: #A726F5;
-        grid-row: 6;
+        background-color: #ffffff;
+        grid-column: 1 / 6;
+        grid-row: 7;
         width: 100vw;
         height: 15vh;
         border-radius: 3vh;
-        border: 1px solid black;
 
         display: grid;
-        grid-template-columns: 25vw 25vw 25vw 25vw;
+        grid-template-columns: 18vw 18vw 28vw 18vw 18vw;
         grid-template-rows: auto;
     }
 
+    .navHome{
+        background-color: #ffffff;
+        width: 17.5vh;
+        height: 17.5vh;
+        border-radius: 50%;
+
+        grid-column: 1 / 6;
+        grid-row: 6 / 8;
+
+        justify-self: center;
+        position: relative;
+        top: 12.5vh;
+    }
+
+    .innerNavHome{
+        display: block;
+        position: absolute;
+        left: 6.25%;
+        top: 50%;
+        transform: translateX(-50%);
+        transform: translateY(-50%);
+        background-color: #DDBBFF;
+        width: 87.5%;
+        height: 87.5%;
+        border-radius: 50%;
+    }
+
+    #homeIcon{
+        background-color: #613EEA;
+
+        display: block;
+        position: absolute;
+        left: 7.5%;
+        top: 50%;
+        transform: translateX(-50%);
+        transform: translateY(-50%);
+
+        width: 85%;
+        height: 85%;
+        border-radius: 50%;
+
+        background-image: url("./../assets/homeIcon.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 55%;
+    }
+
     .navIcon{
-        height: 8vh;
+        height: 6vh;
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center;
@@ -41,94 +96,32 @@
         top: 0.8vh;
     }
 
-    .homeIcon{
+    .rewardsIcon{
         grid-column: 1;
-        background-image: url("./../assets/homeIcon.png");
+        background-image: url("./../assets/rewardsIcon.png");
     }
 
-    .graphIcon{
+    .rewardsText{grid-column: 1;}
+
+    .leaderIcon{
         grid-column: 2;
-        background-image: url("./../assets/chartIcon.png");
+        background-image: url("./../assets/leaderIcon.png");
     }
 
-    .medalIcon{
-        grid-column: 3;
-        background-image: url("./../assets/medalIcon.png");
-    }
+    .leaderText{grid-column: 2;}
 
-    .acornIcon{
+    .investIcon{
         grid-column: 4;
-        background-image: url("./../assets/acorn.png");
+        background-image: url("./../assets/investIconMain.png");
     }
 
+    .investText{grid-column: 4;}
+
+    .accountIcon{
+        grid-column: 5;
+        background-image: url("./../assets/accountIcon.png");
+    }
+
+    .accountText{grid-column: 5;}
     
-    .title{
-        grid-row: 2;
-        justify-self: center;
-        font-size: 6vh;
-    }
-
-    .mainBox{
-        grid-row: 3;
-        justify-self: center;
-        align-self: center;
-        height: 40vh;
-        width: 75vw;
-        /* background-color: aqua; */
-
-        display: grid;
-        grid-template-rows: 4vh 30vh 5vh;
-    }
-
-    .mainStats{
-        display: grid;
-        grid-template-columns: auto auto auto;
-        grid-template-rows: auto;
-        justify-self: center;
-        justify-items: center;
-    }
-
-    #ms1, #ms2, #ms3{padding: 1vh;}
-    #ms1{grid-column: 1;}
-    #ms2{grid-column: 2;}
-    #ms3{grid-column: 3;}
-
-    .chart{
-        width: 72vw;
-        height: 30vh;
-        grid-row: 2;
-        justify-self: center;
-    }
-    #chartImg{
-        width: 72vw;
-        height: 30vh;
-        background-image: url("./../assets/investmentChart.png");
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
-    }
-
-    .buttons{
-        display: grid;
-        grid-template-columns: 27.5vw 20vw auto;
-        grid-template-rows: auto;
-        align-self: center;
-        justify-content: start;
-
-        padding: 1.5vh;
-    }
-
-    .button{
-        background-color: white;
-        width: 22.5vw;
-        height: 4vh;
-        border: 1px solid black;
-        border-radius: 4vh;
-
-        align-items: center;
-        text-align: center;
-    }
-
-    #tradingButton{grid-column: 1;}
-    #hintsButton{grid-column: 2;}
 }
