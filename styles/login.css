@@ -21,29 +21,29 @@ body{
     justify-content: center;
 }
 
-.appName{
+/* .appName{
     align-self: flex-end;
     justify-self: center;
     grid-row: 1;
 
     font-size: 5.5vh;
     font-weight: 500;
-}
+} */
 
 .appLogo{
-    margin-top: 4vh;
+    margin-top: 7.5vh;
 
+    grid-row: 1 / 3;
     align-self: center;
     justify-self: center;
-    grid-row: 2;
-
-    background-image: url("./../assets/acorn.png");
+    
+    background-image: url("./../assets/acornLogo.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
 
-    width: 26vw;
-    height: 20vh;
+    width: 60vw;
+    height: 40vh;
 }
 
 .usernameHere{
