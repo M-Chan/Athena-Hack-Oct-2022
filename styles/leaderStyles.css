@@ -16,7 +16,7 @@
         display: inline-block;
         width: 4vh;
         height: 4vh;
-        background-image: url("./../assets/leaderIcon.png");
+        background-image: url("./../assets/leaderIconMain.png");
         background-repeat: no-repeat;
         background-size: contain;
     }
@@ -105,7 +105,7 @@
 
     .leaderIcon{
         grid-column: 2;
-        background-image: url("./../assets/leaderIcon.png");
+        background-image: url("./../assets/leaderIconMain.png");
     }
 
     .leaderText{grid-column: 2;}

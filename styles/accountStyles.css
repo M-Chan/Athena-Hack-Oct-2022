@@ -16,7 +16,7 @@
         display: inline-block;
         width: 4vh;
         height: 4vh;
-        background-image: url("./../assets/accountIcon.png");
+        background-image: url("./../assets/accountIconMain.png");
         background-repeat: no-repeat;
         background-size: contain;
     }
@@ -119,7 +119,7 @@
 
     .accountIcon{
         grid-column: 5;
-        background-image: url("./../assets/accountIcon.png");
+        background-image: url("./../assets/accountIconMain.png");
     }
 
     .accountText{grid-column: 5;}
