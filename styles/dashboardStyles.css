@@ -123,42 +123,36 @@
         background-size: 55%;
     }
 
+    .navButton{
+        height: 6vh;
+        position: relative;
+        top: 0.8vh;
+    }
+
     .navIcon{
         height: 6vh;
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center;
-        position: relative;
-        top: 0.8vh;
     }
 
-    .rewardsIcon{
-        grid-column: 1;
-        background-image: url("./../assets/rewardsIcon.png");
-    }
-
+    .rewardsIcon{grid-column: 1;}
+    .rewardsIcon{background-image: url("./../assets/rewardsIcon.png");}
     .rewardsText{grid-column: 1;}
 
-    .leaderIcon{
-        grid-column: 2;
-        background-image: url("./../assets/leaderIcon.png");
-    }
-
+    .leaderIcon{grid-column: 2;}
+    .leaderIcon{background-image: url("./../assets/leaderIcon.png");}
     .leaderText{grid-column: 2;}
 
-    .investIcon{
-        grid-column: 4;
-        background-image: url("./../assets/investIcon.png");
-    }
-
+    .investIcon{grid-column: 4;}
+    .investIcon{background-image: url("./../assets/investIcon.png");}
     .investText{grid-column: 4;}
 
-    .accountIcon{
-        grid-column: 5;
-        background-image: url("./../assets/accountIcon.png");
-    }
-
+    .accountIcon{grid-column: 5;}
+    .accountIcon{background-image: url("./../assets/accountIcon.png");}
     .accountText{grid-column: 5;}
+
+    .navIcon a{width: 100%; height: 100%;}
     
     #acornStats{
         height: 4.5vh;

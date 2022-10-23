@@ -1,0 +1,111 @@
+
+/* the below is for mobile screens... */
+@media only screen and (max-width: 400px) {
+    body {
+        display: grid;
+        grid-template-columns: 33vw 34vw 33vw;
+        grid-template-rows: 8vh 8vh 6vh 20vh 20.5vh 20vh 13vh; /* 82.5vh */
+    }
+
+    .title{
+        display: grid;
+    }
+
+    .bottomNav{
+        background-color: #ffffff;
+        grid-column: 1 / 6;
+        grid-row: 7;
+        width: 100vw;
+        height: 15vh;
+        border-radius: 3vh;
+
+        display: grid;
+        grid-template-columns: 18vw 18vw 28vw 18vw 18vw;
+        grid-template-rows: auto;
+    }
+
+    .navHome{
+        background-color: #ffffff;
+        width: 17.5vh;
+        height: 17.5vh;
+        border-radius: 50%;
+
+        grid-column: 1 / 6;
+        grid-row: 6 / 8;
+
+        justify-self: center;
+        position: relative;
+        top: 12.5vh;
+    }
+
+    .innerNavHome{
+        display: block;
+        position: absolute;
+        left: 6.25%;
+        top: 50%;
+        transform: translateX(-50%);
+        transform: translateY(-50%);
+        background-color: #DDBBFF;
+        width: 87.5%;
+        height: 87.5%;
+        border-radius: 50%;
+    }
+
+    #homeIcon{
+        background-color: #613EEA;
+
+        display: block;
+        position: absolute;
+        left: 7.5%;
+        top: 50%;
+        transform: translateX(-50%);
+        transform: translateY(-50%);
+
+        width: 85%;
+        height: 85%;
+        border-radius: 50%;
+
+        background-image: url("./../assets/homeIcon.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 55%;
+    }
+
+    .navIcon{
+        height: 6vh;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        position: relative;
+        top: 0.8vh;
+    }
+
+    .rewardsIcon{
+        grid-column: 1;
+        background-image: url("./../assets/rewardsIcon.png");
+    }
+
+    .rewardsText{grid-column: 1;}
+
+    .leaderIcon{
+        grid-column: 2;
+        background-image: url("./../assets/leaderIcon.png");
+    }
+
+    .leaderText{grid-column: 2;}
+
+    .investIcon{
+        grid-column: 4;
+        background-image: url("./../assets/investIcon.png");
+    }
+
+    .investText{grid-column: 4;}
+
+    .accountIcon{
+        grid-column: 5;
+        background-image: url("./../assets/accountIcon.png");
+    }
+
+    .accountText{grid-column: 5;}
+    
+}
